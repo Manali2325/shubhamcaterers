@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shubham Caterers</title>
+  
+  <!-- Link to External CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/919834348911?text=Hello%20Shubham%20Caterers%2C%20I%20would%20like%20to%20inquire%20about%20your%20services." 
+     class="whatsapp-float" target="_blank">
+    <img src="/asset/whatsapp.png" alt="Chat on WhatsApp">
+  </a>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="/asset/shubham cateres loho.jpg" alt="Catering Icon" class="logo-icon">
+      Shubham Caterers
+    </div>
+    
+    <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+    <nav class="nav-links" id="nav-links">
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Exquisite Catering for Every Occasion</h2>
+      <p>Delivering culinary excellence to make your events memorable.</p>
+      <a href="get-in-touch.html" class="cta-button">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  
+  <section class="gallery">
+    <h3>Our Gallery</h3>
+    <div class="gallery-grid">
+      <img src="/asset/a1.png" alt="Event 1">
+      <img src="/asset/a2.png" alt="Event 2">
+      <img src="/asset/a3.png" alt="Event 3">
+      <img src="/asset/a4.png" alt="Event 4">
+      <img src="/asset/a5.png" alt="Event 5">
+      <img src="/asset/a6.png" alt="Event 6">
+    </div>
+  </section>
+  
+  <section class="testimonials">
+    <h3>What Our Clients Say</h3>
+    <div class="testimonial-cards">
+      <div class="testimonial-card">
+        <img src="/asset/vsir.png" alt="Client 1">
+        <h4>Vishal Hingmire</h4>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p>"Good quality  food with good service at affordable cost."</p>
+        <span class="time-ago">🕒 3 months ago</span>
+      </div>
+      <div class="testimonial-card">
+        <img src="/asset/mg.png" alt="Client 2">
+        <h4>Manali Gosavi23</h4>
+        <p>"The food was fantastic and the service..set up was professional..Thankyou ❤️❤️"</p>
+        <span class="time-ago">🕒 2 months ago</span>
+
+      </div>
+      <div class="testimonial-card">
+        <img src="/asset/am.png" alt="Client 3">
+        <h4>Amit Pandit</h4>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p>"Excellent Service, Excellent food quality, We had a function in Vaduj 
+          ,nearly 55 Km from Satara City But they came with very good preparation 
+          even they provided table and chair clothing asked very last minute. 
+          Thank you and keep it up 🙏"</p>
+          <span class="time-ago">🕒 2 years ago</span>
+      </div>
+        
+
+      
+
+          <footer class="footer">
+            <div class="footer-container">
+              <div class="footer-column">
+                <h4>Shubham Caterers</h4>
+                <p>We provide top-notch catering services for weddings, events, and parties in Satara and nearby regions.</p>
+              </div>
+          
+              <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="get-in-touch.html">Contact</a></li>
+                </ul>
+                <div class="footer-column">
+                  <h4>Contact</h4>
+                  <p>📞 +91 98343 48911</p>
+                  <p>📧 info@shubhamcaterers.com</p>
+                  <p>📍 Satara, Maharashtra</p>
+            
+                <div class="footer-column">
+                  <h4>Follow Us</h4>
+                  <div class="social-icons">
+                    <a href="https://facebook.com/shubhamcaterers" target="_blank">Facebook</a><br>
+                    <a href="https://instagram.com/shubhamcaterers" target="_blank">Instagram</a>
+                  </div>
+                <div class="footer-bottom">
+                  <p>&copy; 2025 Shubham Caterers. All rights reserved.</p>
+                </div>
+              </footer>
+              </div>
+          
+             
+              
+          
+
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const mobileMenu = document.getElementById('mobile-menu');
+      const navLinks = document.getElementById('nav-links');
+
+      mobileMenu.addEventListener('click', function () {
+        navLinks.classList.toggle('active');
+      });
+    });
+
+    function toggleReadMore(button) {
+      const card = button.closest('.testimonial-card');
+      const moreText = card.querySelector('.more-text');
+      const dots = card.querySelector('.dots');
+
+      if (moreText.style.display === "none" || moreText.style.display === "") {
+        moreText.style.display = "inline";
+        dots.style.display = "none";
+        button.textContent = "Read Less";
+      } else {
+        moreText.style.display = "none";
+        dots.style.display = "inline";
+        button.textContent = "Read More";
+      }
+    }
+  </script>
+</body>
+</html>
+
+ 
+
